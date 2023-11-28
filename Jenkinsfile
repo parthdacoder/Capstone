@@ -2,14 +2,14 @@ pipeline {
     agent any
     environment {
         // Define environment variables here
-        DOCKER_IMAGE = 'parijatkasbekar/capstonedataclustering'
+        DOCKER_IMAGE = 'parthdacoder/capstone'
         DOCKER_TAG = 'latest'
     }
     stages {
         stage('Checkout') {
             steps {
                 // Check out from version control
-                git 'https://github.com/parijatkasbekar/dataclustering.git'
+                git 'https://github.com/parthdacoder/Capstone.git'
             }
         }
         stage('Setup Python Environment') {
